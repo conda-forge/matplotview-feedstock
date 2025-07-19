@@ -1,5 +1,5 @@
 {% set name = "matplotview" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/matplotview-{{ version }}.tar.gz
-  sha256: 877566f57520e10930b187e1d0afcae4c0b4f1a6ab6a56093fd593299e1a2505
+  sha256: 306877cbbe8bd48fd0808af7a230dd111ae93936d716961bd91d74a2875984b5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
